@@ -1,6 +1,42 @@
+.mainWrapper{
+    width:100%;
+    height:100%;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    background: linear-gradient(358deg,#ff6f04, #f49822, #f44422);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 49s ease infinite;
+    -moz-animation: AnimationName 49s ease infinite;
+    animation: AnimationName 49s ease infinite;
+}
+ 
+
+.first{
+    width:100%;
+    background-color: black;
+    height:100%;
+}
+.second{
+    width: 100%;
+    height: 100%;
+}
+.title{
+    color: white;
+    font-family: "Montserrat",sans-serif;
+    font-size: 60px;
+    border-bottom:0px solid white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+
+}
 .bodyWrapper{
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
     z-index:10;
     left:0;
     top:0;
@@ -24,7 +60,7 @@
     margin-bottom: -55px;
 }
 #navItems{
-    font-family: "Work Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     color:white;
     font-size:25px;
     margin-left:50px;
@@ -41,37 +77,24 @@
         font-size:20px;
         padding-top: 20px;
         cursor: pointer;
-        margin-left:0px;
+        margin-left:20px;
         padding-bottom: 20px;
     }
     #navItemsActive{
         font-size:20px;
         padding-top: 20px;
         cursor: pointer;
-        margin-left:-20px;
+        margin-left:20px;
         padding-bottom: 20px;
     }
-    #logo{
-    max-height:200px;
-    max-width: 200px;
-    margin-top: -55px;
-    margin-bottom: -40px;
-    }
-    #lightbulb{
-    display: block;
-    margin:0 auto; 
-    height:350px;
-    width: 350px;
-    }
-    .logo{
-        visibility:visible;
-    }
+   
 }
 
 #navItemsActive{
-    font-family: "Work Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     color:white;
     cursor: pointer;
+    margin-left: 50px;
     font-size:25px;
     transition: transform 0.5s;
 
@@ -81,30 +104,4 @@
     transition: transform 0.5s;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-#main{
-    padding-top:100px;
-    height:100%;
-    background: linear-gradient(3deg, #e02323, #efd73c);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 44s ease infinite;
-    -moz-animation: AnimationName 44s ease infinite;
-    animation: AnimationName 44s ease infinite;
-}
-.logo{
-    visibility: hidden;
-}
+
