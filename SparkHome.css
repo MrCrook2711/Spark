@@ -66,7 +66,7 @@
     font-family: "Montserrat",sans-serif;
     color:white;
     font-size:25px;
-    margin-left:100px;
+    margin-left:7.5vw;
     letter-spacing: 5px;
     text-transform: uppercase;
     opacity: 0.75;
@@ -83,7 +83,7 @@
         padding-top: 20px;
         cursor: pointer;
         letter-spacing: 5px;
-        margin-left: 5px;
+        margin-top: 20px;
         padding-bottom: 20px;
     }
     #navItemsActive{
@@ -91,7 +91,7 @@
         padding-top: 20px;
         letter-spacing: 5px;
         cursor: pointer;
-        margin-left:5px;
+        margin-top: 20px;
         text-transform: uppercase;
         padding-bottom: 20px;
     }
@@ -227,6 +227,29 @@ a:hover{
 */    75%{margin-left:35vw;margin-right:35vw;}
    /* 87.5%{margin-left:16vw;margin-right:16vw;}*/
     100%{margin-left: 25vw;margin-right:25vw;}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+     #navItems{
+        font-size:20px;
+        padding-top: 20px;
+        cursor: pointer;
+        margin-left: 0px;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    #navItemsActive{
+        font-size:20px;
+        padding-top: 20px;
+        margin-left: 0px;
+        letter-spacing: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+}
+
 }
 .sticky {
   position: fixed;
