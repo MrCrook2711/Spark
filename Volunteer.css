@@ -1,0 +1,10 @@
+.form{
+	width: 100%;
+	height: 100%;
+}
+#navbar{
+	top:0!important;
+	position: fixed!important;
+	background-color: black!important;
+	width:100%!important;
+}
