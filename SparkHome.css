@@ -296,12 +296,23 @@ a:hover{
 	position: relative;
     margin-top:100px;
     animation-delay:1.5s;
-    animation-name: move;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
     opacity: 0;
+    animation-name:arrow,opening;
+    transform: scale(0);
+    animation-duration: 1s;
+    animation-iteration-count: infinite,1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+/*    opacity: 0;*/
     cursor: pointer;
     top: 50%;
     transform: translateY(-50%); 
-
+}
+@keyframes arrow{
+    from{transform: scale(1.0);}
+    to{transform: scale(1.5);}
+}
+@keyframes opening{
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
