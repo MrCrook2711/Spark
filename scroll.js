@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  WindowHeightNormalizerOnMobileScreens();
+  // WindowHeightNormalizerOnMobileScreens();
   $(".image").click(function(){
       document.querySelector('.second').scrollIntoView({
         behavior: 'smooth'
@@ -39,4 +39,10 @@ function WindowHeightNormalizerOnMobileScreens(){
   var normalHeight = height + 50;
   // alert(normalHeight)
   $(".second").css("height",String(normalHeight));
+}
+if (window.matchMedia("(max-width: 600px)").matches) {
+  WindowHeightNormalizerOnMobileScreens();
+  // alert("Mobile");
+} else {
+  // alert("Not a mobile");
 }
