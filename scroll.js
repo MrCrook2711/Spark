@@ -46,3 +46,5 @@ if (window.matchMedia("(max-width: 600px)").matches) {
 } else {
   // alert("Not a mobile");
 }
+//TO SEE THE FUNCTION IN ACTION, RELOAD THE PAGE BECAUSE IT IS CALLED IN DOCUMENT.READY()
+//USER WILL NOT WANT RESIZE THE BROWSER WINDOW
