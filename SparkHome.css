@@ -304,8 +304,8 @@ a:hover{
 }nav{
     text-align: center;
     opacity: 0;
-     animation-name: opening;
-    opacity: 0;
+     /*animation-name: opening;
+*/    opacity: 0;
     animation-delay: 3s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -341,7 +341,7 @@ a:hover{
 	position: relative;
     margin-top:100px;
     animation-delay:1.5s;
-    opacity: 1;
+    opacity: 0;
     animation-name:arrow,opening;
     transform: scale(0);
     animation-duration: 1s;
@@ -357,10 +357,10 @@ a:hover{
     from{transform: scale(1.0);}
     to{transform: scale(1.5);}
 }
-/* @keyframes opening{
+ @keyframes opening{
     from{opacity: 0;}
     to{opacity: 1;}
-} */
+} 
 /* #Register{
       margin-right: 7.5vw;
       font-family: "Montserrat",sans-serif;
