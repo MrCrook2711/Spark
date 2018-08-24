@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  WindowHeightNormalizerOnMobileScreens();
   $(".image").click(function(){
       document.querySelector('.second').scrollIntoView({
         behavior: 'smooth'
@@ -23,6 +24,7 @@ $(window).scroll(function() {
   if (value === 880){
     $("#navbar").addClass("navbar-static")
     $("#navbar").addClass("navbar-static")
+    $('')
   }
   $('#navbar').css({
     opacity: function() {
@@ -31,3 +33,10 @@ $(window).scroll(function() {
     }
   });
     });
+function WindowHeightNormalizerOnMobileScreens(){
+  var height = $(".second").outerHeight();
+  // alert(height);
+  var normalHeight = height + 50;
+  // alert(normalHeight)
+  $(".second").css("height",String(normalHeight));
+}
