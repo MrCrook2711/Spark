@@ -99,7 +99,7 @@ ul{
         padding-bottom: 20px;
     }
     .bold{
-        font-size:25px;
+        font-size:45px;
     }
     .second{
         height:auto;
@@ -204,7 +204,7 @@ a:hover{
 }
 #navbar{
     background-color: transparent;
-    opacity: 1;
+    opacity: 0;
     position: fixed;
 }
 
