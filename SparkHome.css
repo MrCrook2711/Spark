@@ -360,7 +360,24 @@ a:hover{
  @keyframes opening{
     from{opacity: 0;}
     to{opacity: 1;}
-} 
+}
+#grid{
+  float: left;
+  margin-bottom: 2%;
+}
+.containerr{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+#caption {
+    display: block;
+}
+figcaption{
+  color: white;
+  font-size: 15pt;
+  padding: 10px;
+}
 /* #Register{
       margin-right: 7.5vw;
       font-family: "Montserrat",sans-serif;
