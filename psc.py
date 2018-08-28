@@ -89,4 +89,4 @@ else:
 	else:
 		print sName, " stood second with:",sVotes
 		print tName, " stood third with: ",tVotes
-		print foName, " stood fourth with: ",fVotes
+		print foName, " stood fourth with: ",foVotes
