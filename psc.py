@@ -75,6 +75,10 @@ if ncw==True:
 		print "2 candidates had the same score: ",fVotes
 		print tName, " stood third with:",tVotes
 		print foName," stood fourth with:",foVotes
+	elif sVotes==tVotes and tVotes==foVotes:
+		print "3 candidates had the same score: ",sVotes
+	elif tVotes==foVotes:
+		print "2 candidates have the same score: ",tVotes
 else:
 	print fName, " is the new school captain with: ",fVotes
 	if sVotes==tVotes:
