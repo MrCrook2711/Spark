@@ -1,4 +1,3 @@
-
 while True:
 	try:
 		tot = int(input("Enter the total number of voters:"))
@@ -68,25 +67,25 @@ if ncw==True:
 	print "No overall winner."
 	if fVotes==sVotes and sVotes==tVotes and tVotes==foVotes:
 		print "ALL CANDIDATES HAD THE SAME SCORE.Votes: ",fVotes
-	elif fVotes==sVotes and sVotes==tVotes:
+	elif fVotes==sVotes and sVotes==tVotes and tVotes>fVotes:
 		print "Three candidates had the same score: ",fVotes
 		print foName," stood fourth with: ",foVotes
-	elif fVotes==sVotes:
+	elif fVotes==sVotes and sVotes>tVotes and tVotes==foVotes:
 		print "2 candidates had the same score: ",fVotes
-		print tName, " stood third with:",tVotes
-		print foName," stood fourth with:",foVotes
-	elif sVotes==tVotes and tVotes==foVotes:
-		print "3 candidates had the same score: ",sVotes
-	elif tVotes==foVotes:
-		print "2 candidates have the same score: ",tVotes
+		print "Other two candidates also had a same score: ",tVotes
+	elif fVotes==sVotes and sVotes==tVotes and tVotes>foVotes:
+		print "3 candidates had the same score: ",fVotes
+		print foName," stood last with: ",foVotes
 else:
 	print fName, " is the new school captain with: ",fVotes
-	if sVotes==tVotes:
-		print "Two candidates had the same amount of votes: ",sVotes
-		print foName, " stood fourth with: ",fVotes
-	elif tVotes==fVotes: 
+	if sVotes==tVotes and tVotes==foVotes:
+		print "Three candidates had the same amount of votes: ",sVotes
+	elif sVotes>tVotes and tVotes==foVotes: 
 		print sName, " stood second with:",sVotes
 		print "Two candidates had the same amount of votes: ",tVotes
+	elif sVotes==tVotes and tVotes>fVotes:
+		print "Two candidates had the same score: ",sVotes
+		print foName, "stood last with: ",foVotes
 	else:
 		print sName, " stood second with:",sVotes
 		print tName, " stood third with: ",tVotes
