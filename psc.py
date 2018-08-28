@@ -78,9 +78,11 @@ if ncw==True:
 else:
 	print fName, " is the new school captain with: ",fVotes
 	if sVotes==tVotes:
-		print sName, " and",  Tname, " had the same amount of votes: ",sVotes
+		print "Two candidates had the same amount of votes: ",sVotes
+		print foName, " stood fourth with: ",fVotes
 	elif tVotes==fVotes: 
-		print tName, " and", foName, " had the same amount of votes: ",tVotes
+		print sName, " stood second with:",sVotes
+		print "Two candidates had the same amount of votes: ",tVotes
 	else:
 		print sName, " stood second with:",sVotes
 		print tName, " stood third with: ",tVotes
