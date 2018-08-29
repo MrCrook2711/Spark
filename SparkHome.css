@@ -66,7 +66,7 @@
 ul{
   width: 100%;
 }
-#navItems{
+.navItems{
     width: 180px;
     font-family: "Montserrat",sans-serif;
     color:white;
@@ -79,12 +79,12 @@ ul{
     cursor: pointer;
     transition: transform 0.5s;
 }
-#navItems:hover{
+.navItems:hover{
     transform:scale(1.2);
     transition: transform 0.5s;
 }
 @media only screen and (max-width: 600px) and (min-width: 340px) {
-    #navItems{
+    .navItems{
         font-size:20px;
         padding-top: 20px;
         cursor: pointer;
@@ -92,7 +92,7 @@ ul{
         margin-top: 20px;
         padding-bottom: 20px;
     }
-    #navItemsActive{
+    .navItemsActive{
         font-size:20px;
         padding-top: 20px;
         letter-spacing: 5px;
@@ -129,7 +129,7 @@ ul{
 @media only screen and (max-width: 321px){
     .second{
         height: 200%!important;
-    }#navItems{
+    }.navItems{
         font-size:20px;
         padding-top: 20px;
         cursor: pointer;
@@ -137,7 +137,7 @@ ul{
         margin-top: 20px;
         padding-bottom: 20px;
     }
-    #navItemsActive{
+    .navItemsActive{
         font-size:20px;
         padding-top: 20px;
         letter-spacing: 5px;
@@ -168,7 +168,7 @@ ul{
     color: white;
    }
 }
-#navItemsActive{
+.navItemsActive{
     font-family: "Montserrat",sans-serif;
     color:white;
     margin-left:3.75vw;
@@ -179,7 +179,7 @@ ul{
     font-size:25px;
     transition: transform 0.5s;
 }
-#navItemsActive:hover{
+.navItemsActive:hover{
     transform:scale(1.2);
     transition: transform 0.5s;
 }
