@@ -1,3 +1,6 @@
+*{
+    font-family: "Montserrat",sans-serif;
+}
 .mainWrapper{
     z-index: 10;
     left: 0;
@@ -17,8 +20,8 @@
     margin-bottom: 0;
     width: 100%;
     text-align: center;
-    height: 100%!important;
-    background:linear-gradient(0deg,#1b1f26,#2e3842);
+    height: 100%;
+    background:linear-gradient(0deg,black,#2e3842);
 /*    21b2a6 121619 */
     text-align: center;
 }
@@ -63,7 +66,7 @@
 ul{
   width: 100%;
 }
-#navItems{
+.navItems{
     width: 180px;
     font-family: "Montserrat",sans-serif;
     color:white;
@@ -76,12 +79,12 @@ ul{
     cursor: pointer;
     transition: transform 0.5s;
 }
-#navItems:hover{
+.navItems:hover{
     transform:scale(1.2);
     transition: transform 0.5s;
 }
-@media only screen and (max-width: 600px) {
-    #navItems{
+@media only screen and (max-width: 600px) and (min-width: 340px) {
+    .navItems{
         font-size:20px;
         padding-top: 20px;
         cursor: pointer;
@@ -89,7 +92,7 @@ ul{
         margin-top: 20px;
         padding-bottom: 20px;
     }
-    #navItemsActive{
+    .navItemsActive{
         font-size:20px;
         padding-top: 20px;
         letter-spacing: 5px;
@@ -102,7 +105,7 @@ ul{
         font-size:45px;
     }
     .second{
-        height:150%!important;
+        height:150.0%!important;
     }
    .top{
     margin-right:20px;
@@ -113,24 +116,70 @@ ul{
     width: 100vw;
    }.imageLogo{
     display: none;
+   }ul li{
+    text-align: left;
    }
+   .image{display: none;}
+   .NormalHidden{
+    display:block!important;
+    color: white;
 
+   }
 }
-
-#navItemsActive{
+@media only screen and (max-width: 321px){
+    .second{
+        height: 200%!important;
+    }.navItems{
+        font-size:20px;
+        padding-top: 20px;
+        cursor: pointer;
+        letter-spacing: 5px;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navItemsActive{
+        font-size:20px;
+        padding-top: 20px;
+        letter-spacing: 5px;
+        cursor: pointer;
+        color: white;
+        margin-top: 20px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    .bold{
+        font-size:45px;
+    }
+   .top{
+    margin-right:20px;
+    margin-left: 20px;
+   }
+   #navbar{
+    background-color: #1e1e1e!important;
+    width: 100vw;
+   }.imageLogo{
+    display: none;
+   }ul li{
+    text-align: left;
+   }
+   .image{display: none;}
+   .NormalHidden{
+    display:block!important;
+    color: white;
+   }
+}
+.navItemsActive{
     font-family: "Montserrat",sans-serif;
     color:white;
+    margin-left:3.75vw;
+    margin-right:3.75vw;
     cursor: pointer;
-    margin-left: 50px;
-    margin-right: 50px;
     text-transform: uppercase;
     letter-spacing:5px;
-    margin-left:100px;
     font-size:25px;
     transition: transform 0.5s;
-
 }
-#navItemsActive:hover{
+.navItemsActive:hover{
     transform:scale(1.2);
     transition: transform 0.5s;
 }
@@ -245,29 +294,7 @@ a:hover{
    /* 87.5%{margin-left:16vw;margin-right:16vw;}*/
     100%{margin-left: 25vw;margin-right:25vw;}
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-     #navItems{
-        font-size:20px;
-        padding-top: 20px;
-        cursor: pointer;
-        margin-left: 0px;
-        letter-spacing: 5px;
-        margin-top: 20px;
-        padding-bottom: 20px;
-    }
-    #navItemsActive{
-        font-size:20px;
-        padding-top: 20px;
-        margin-left: 0px;
-        letter-spacing: 5px;
-        cursor: pointer;
-        margin-top: 20px;
-        text-transform: uppercase;
-        padding-bottom: 20px;
-    }
-}
 
-}
 .sticky {
   position: fixed;
   top: 0;
@@ -306,6 +333,7 @@ a:hover{
     opacity: 0;
      /*animation-name: opening;
 */    opacity: 0;
+    width: 100%;
     animation-delay: 3s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
@@ -336,9 +364,9 @@ a:hover{
     margin-top: 5vh;
 }
 .image{
-	width: 20px;
-	height: 20px;
-	position: relative;
+    width: 20px;
+    height: 20px;
+    position: relative;
     margin-top:100px;
     animation-delay:1.5s;
     opacity: 0;
@@ -360,24 +388,7 @@ a:hover{
  @keyframes opening{
     from{opacity: 0;}
     to{opacity: 1;}
-}
-#grid{
-  float: left;
-  margin-bottom: 2%;
-}
-.containerr{
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-}
-#caption {
-    display: block;
-}
-figcaption{
-  color: white;
-  font-size: 15pt;
-  padding: 10px;
-}
+} 
 /* #Register{
       margin-right: 7.5vw;
       font-family: "Montserrat",sans-serif;
@@ -400,3 +411,9 @@ figcaption{
         margin-top: 20px;
         padding-bottom: 20px;
     } */
+.NormalHidden{
+    display: none;
+}
+ul li{
+    width: 100%!important;
+}
