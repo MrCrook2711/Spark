@@ -21,7 +21,7 @@ body{
 }
 
 .navContent{
-	font-size: 30px;
+	font-size:25px;
 	width: 180px;
 	transition: 0.3s;
 	margin-left: 3vw;
@@ -31,6 +31,16 @@ body{
 }.navContent:hover{
 	transform: scale(1.1);
 	transition: 0.3s;
+}.landing-image1{
+	width: 50px;
+	height: 70px;
+	margin-bottom: 70px;
+	animation-name: opacityAnim;
+	opacity: 0;
+	animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-delay:2s;
 }
 a{
 	color: white;
@@ -222,4 +232,21 @@ ul{
     .navContent{
     	margin-left: 1vw;
     }
+}
+@keyframes text{
+	from{line-height: 2px;}
+	to{line-height: auto;}
+}
+.about-text{
+	animation-name:opacityAnim;
+	opacity: 0;
+	letter-spacing: 2px;
+	animation-delay: 1.5s;
+	animation-duration: 0.5s,3s;
+	animation-fill-mode: forwards;
+	text-transform: uppercase;
+	color: white;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	font-size: 20px;
 }

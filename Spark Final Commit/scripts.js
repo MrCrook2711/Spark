@@ -16,14 +16,17 @@ $(document).ready(function(){
     if (width<=768){
       var autoHeight=$(".second").outerHeight();
       if (width<=320){
+        var adjustedHeight = autoHeight+1100;
+        $(".second").height(adjustedHeight);
+      }else if (width>=330&&width<=400){
+        var adjustedHeight = autoHeight+900;
+        $(".second").height(adjustedHeight);
+      }else if (width>=401){
         var adjustedHeight = autoHeight+500;
         $(".second").height(adjustedHeight);
-      }else if (width>=330){
-        var adjustedHeight = autoHeight+300;
-        $(".second").height(adjustedHeight);
+      }
       $("li").removeClass("mt-0");
       $("li").addClass("mt-2");
-      }
     }
    
 });
