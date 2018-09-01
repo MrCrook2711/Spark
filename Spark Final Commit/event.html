@@ -1,0 +1,173 @@
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <meta name="description" content="IGNITE IN YOU.">
+        <meta name="author" content="Nirbhay Singh"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+      <!-- Final Commit -->
+      <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+       <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="styles.css">
+       <script type="text/javascript">
+        $(document).ready(function(){
+          var width=$(window).width();
+          alert(width);        
+          if (width>=350)&&(width<=1200){
+            alert("danger zone");
+            $("li").removeClass("mt-0");
+            $("li").addClass("mt-2");
+          }
+        });
+       </script>
+  </head>
+  <body>  
+      <div class="e first">
+        <nav class="navbar navbar-expand-xl event" id="navbar" align="center" style="opacity: 1!important;position: static!important;width: 100%!important;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+            <img src="assets/images/lightBulbWhite.png" style="width:20px;height:30px; align-content: center;border:none;">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav pt-2 pb-2 justify-content-center">
+              <li class="nav-item mt-0 navContent">
+                <a href="team.html">Team</a>
+              </li>
+              <li class="nav-item mt-0 navContent">
+                  <a href="event.html">Event</a>
+              </li>
+              <li class="nav-item mt-0 navContent active hidden-md-down">
+                  <a href="index.html"><img src="assets/images/lightBulbWhite.png" style="width:50px;height:70px; align-content: center;" id="logo"></a>
+              </li>
+              <li class="nav-item mt-0 navContent" id="hide">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-item mt-0 navContent">
+                <a href="about.html"> About </a>
+              </li>
+              <li class="nav-item mt-0 navContent">
+                <a href="register.html"> Enrol </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="events">         
+          <div class="eventBlock" style="background-image:url('assets/images/f.png');"data-toggle="modal" data-target="#fModal"></div>
+          <div class="eventBlock" style="background-image:url('assets/images/hp.png');"data-toggle="modal" data-target="#hpModal"></div>
+          <div class="eventBlock" style="background-image:url('assets/images/marvel.png');"data-toggle="modal" data-target="#mcuModal"></div>
+        </div>
+        <div class="events">
+          <div class="eventBlock" style="background-image:url('assets/images/rc.png');"data-toggle="modal" data-target="#cModal"></div>
+          <div class="eventBlock" style="background-image:url('assets/images/logic.png');"data-toggle="modal" data-target="#lModal"></div>
+        </div>
+        
+         
+
+      <div class="modal fade" id="fModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Fortnite</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+             The wait is over, the game of the year has finally been implemented into a competition. Go head to head with friends(or enemies) to battle it out and finally put an end to the argument - who is the best at Fortnite?
+
+              The competition will follow a knockout/elimination pattern. The person to stand till the end will be declared the winner. We plan to allow all three platforms: Console, PC and Mobile Devices. We expect you to bring your own PCs and Mobile Phones, but bringing a console is not obligatory.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal fade" id="hpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Horcrux Hunt</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Text goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal fade" id="cModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cubing</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Text goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="modal fade" id="mcuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">MCU Quiz</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Text goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="lModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Logic Solving</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Text goes here...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+       
+    </body>
+     <!--  <script type="text/javascript" src="scripts.js"></script> -->
+      
+       
+</html>
