@@ -4,7 +4,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
         <meta name="description" content="IGNITE IN YOU.">
-        <meta name="author" content="Nirbhay Singh" /t>
+        <meta name="author" content="Nirbhay Singh" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
       <!-- Final Commit -->
@@ -13,17 +13,84 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <style type="text/css">
+    body{
+      text-align: center;
+    }
+    *{
+      overflow-x:hidden;
+    }
       nav{
         opacity:1!important;
         position:static!important;
+    }
+    .grid{
+      display: flex;
+      flex-direction: row;
+      height:auto;
+      flex-wrap: wrap;
+      padding: 0px;
+      margin-top: 20px;
+      justify-content: space-evenly;
+    }.vol-block{
+       width: calc(100% * 0.57735);
+      /* border-radius: 50%!important; */
+      height: 200px;
+      grid-gap: 0px;
+      width: 205px;
+      background-size: cover;
+      border-left: 5px solid white;
+      border-top: 5px solid white;
+      border-right: 5px solid #1e1e1e;
+      border-bottom: 5px solid #1e1e1e;
+      margin:0!important;
+    }
+    @media only screen and (max-width:768px) {
+      .grid{
+        flex-direction: row!important;
+        flex-wrap: wrap;
+        padding: 0px;
+
+      }.vol-block{
+        width: 111px!important;
+        height: 100px!important;
+        grid-gap: 0px;
+        /* border-radius: 50%!important; */
+        border-left: 5px solid white;
+        border-top: 5px solid white;
+        border-right: 5px solid ##1e1e1e;
+        border-bottom: 5px solid #1e1e1e;
+        background-size: cover!important;
+        background-repeat: no-repeat;
       }
+      .g-first{
+        margin-top: 0!important;
+      }
+}.vol{
+      margin-bottom: 50px!important;
+      opacity: 1!important;
+    }#navbar{
+      margin-bottom:10!important;
+    }.hiddenText{
+      color: white;
+      font-size: 16px;
+      transition: 0.3s;
+      background-color: #1e1e1e;
+      font-family: "Montserrat",sans-serif;
+      opacity: 0;
+    }.vol-block:hover >.hiddenText{
+      opacity: 1;
+      transition: 0.3s;
+    }.vol-block:hover{
+      opacity: 0.7;
+      transition: 0.3s;
+    }
     </style>
        <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
        <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>  
+  <body>
       <div class="first">
-       <nav class="navbar navbar-expand-xl" id="navbar" align="center">
+        <nav class="navbar navbar-expand-xl" id="navbar" align="center">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="toggler">
             <img src="assets/images/lightBulbWhite.png" style="width:20px;height:30px; align-content: center;border:none;">
           </button>
@@ -35,7 +102,7 @@
               <li class="nav-item mt-0 navContent">
                   <a href="event.html">Event</a>
               </li>
-              <li class="nav-item mt-0 navContent active hidden-md-down">
+              <li class="nav-item mt-0 navContent hidden-md-down">
                   <a href="index.html"><img src="assets/images/lightBulbWhite.png" style="width:50px;height:70px; align-content: center;" id="logo"></a>
               </li>
               <li class="nav-item mt-0 navContent" id="hide">
@@ -50,3 +117,35 @@
             </ul>
           </div>
         </nav>
+        <h1 class="landing-title vol">Volunteers</h1>
+          <hr class="landing-hr vol">
+          <div class="grid g-first">
+
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/aishani.jpg')"><p class="hiddenText">Aishani</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/adriana.jpeg')"><p class="hiddenText">Adriana</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/akshat.jpg')"><p class="hiddenText">Akshat</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/dania.jpg')"><p class="hiddenText">Dania</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/deshna.jpeg')"><p class="hiddenText">Deshna</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/dhruvi.jpg')"><p class="hiddenText">Dhruvi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/drishti.jpg')"><p class="hiddenText">Drishti</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/harsh.jpeg')"><p class="hiddenText">Harsh</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/idk.png')"><p class="hiddenText">Anupriya</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/idk2.jpg')"><p class="hiddenText">Anad</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/keshav.jpg')"><p class="hiddenText">Keshav</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/mahika.jpg')"><p class="hiddenText">Mahika</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/manya a.jpg')"><p class="hiddenText">Manya</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/nirbhay2.jpg')"><p class="hiddenText">Nirbhay</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/pranava.jpg')"><p class="hiddenText">Pranava</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/priyanshi.jpg')"><p class="hiddenText">Priyanshi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/ravishankar.jpg')"><p class="hiddenText">Ravi</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/sejal.jpg')"><p class="hiddenText">Sejal</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/shreyas.jpg')"><p class="hiddenText">Shreyas</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/shubhodya.jpg')"><p class="hiddenText">Shubh</p></div>
+            <div class="vol-block" style="background-image: url('assets/images/volunteers/thira.jpg')"><p class="hiddenText">Thira</p></div>
+
+       </div>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+  </html>
